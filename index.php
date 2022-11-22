@@ -92,8 +92,6 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $request_body);
 curl_setopt($ch, CURLOPT_HEADER, true);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch,CURLOPT_COOKIE,"buvid3=F54DEBEB-2AA2-69F3-E980-E38D0BE42A8A04776infoc; b_nut=1668848904; i-wanna-go-back=-1; _uuid=AEECD326-A5BC-429F-714C-784922F9ACED05981infoc; buvid4=30C8B913-BDC7-A36C-D688-4EF8A4F3AFD506575-022111917-s1zY4ydn84P69JTvfphvCw%3D%3D; fingerprint=2cba38bcd5a7a9ed4720b68acb2ce870; buvid_fp_plain=undefined; DedeUserID=6942283; DedeUserID__ckMd5=e956942488750d72; rpdid=|(um)~JRJ~Rl0J'uYY))R)mR~; b_ut=5; nostalgia_conf=-1; LIVE_BUVID=AUTO4416688790338846; SESSDATA=f6a6f908%2C1684650405%2C0ec27%2Ab1; bili_jct=f2b2704cd8b57cfa245f7378fd02f4dc; sid=89tiffr9; theme_style=light; b_lsid=72DDB1013_1849F4F57FE; innersign=1; PVID=2; CURRENT_BLACKGAP=0; buvid_fp=2cba38bcd5a7a9ed4720b68acb2ce870; balh_server_inner=__custom__; balh_is_closed=; balh_server_custom=https://admire.iuo.ink/; balh_server_custom_hk=https://admire.iuo.ink/; balh_curr_season_id=5551; balh_upos_server=ks3; balh_=ks3; CURRENT_FNVAL=80; blackside_state=1; bp_video_offset_6942283=731358666420125700; balh_season_ss43772=1; balh_season_ss39046=1; balh_season_ss42402=1");
-
 
 $response = curl_exec($ch);
 
