@@ -1,0 +1,7 @@
+admirecn.de {
+	root * /root/www/
+	log /var/log/caddy/access.log
+	reverse_proxy /x/* /pgc/player/* http://api.bilibili.com {
+		header_up Host api.bilibili.com
+	}
+}
