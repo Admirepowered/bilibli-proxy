@@ -7,9 +7,12 @@ $request_query = $_SERVER['QUERY_STRING'];
 $request_uri = $_SERVER['REQUEST_URI'];
 $req_referer = $_SERVER['HTTP_REFERER'];
 $request_headers = getallheaders();
-$request_body = file_get_contents('php://input');
+$request_body =trim(file_get_contents('php://input'));
 $url= 'https://api.bilibili.com/'.$request_uri;
 $curl = curl_init();
+if ($request_method=="POST"){
+	curl_setopt($curl,CURLOPT_POSTFIELDS, $request_body);
+}
 $pos = strpos($req_referer,'/',10);
 $referer = substr($req_referer,0,$pos);
 curl_setopt_array($curl, array(
